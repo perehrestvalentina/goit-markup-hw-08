@@ -1,0 +1,36 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #757575;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button,
+input {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

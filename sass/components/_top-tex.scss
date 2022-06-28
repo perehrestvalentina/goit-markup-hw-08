@@ -1,0 +1,12 @@
+.top-tex {
+    @include font(14px, null, 1.71, 00.03em);
+
+}
+
+.top-tex--light {
+    color: #ffffff;
+}
+
+.top-tex--dark {
+    color: var(--second-title-color);
+}
