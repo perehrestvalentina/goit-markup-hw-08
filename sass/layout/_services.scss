@@ -1,14 +1,11 @@
 .section-work {
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.services__title--start {
-    margin-bottom: 50px;
-}
+    @media screen and (max-width:1199px) {
+        display: none;
 
-.services__title {
-    text-align: center;
+    }
 }
 
 .services__list--end {
@@ -19,21 +16,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    /*font-size: 36px;
+    font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: -30px;*/
+    margin-bottom: -30px;
 }
 
 .services__item {
     width: 100%;
-    /* flex-basis: calc((100% / 3) - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;*/
+    flex-basis: calc((100% / 3) - 30px);
+    margin-bottom: 30px;
+
 }
 
 .services__box {
     position: relative;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__title--start {
+    margin-bottom: 50px;
 }
 
 .services__top-text {
