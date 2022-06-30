@@ -1,14 +1,64 @@
 .hero {
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    /*padding-top: 200px;
+    padding-bottom: 200px;*/
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
+}
+
+.order {
+    width: 100%;
+    padding: 0;
+}
+
+
+.order-title {
+    margin-bottom: 30px;
+    padding: 118px 60px 30px;
+
+}
+
+.order__title {
+    font-weight: 900;
+    /*font-size: 44px;
+    line-height: 1.36;*/
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+
+}
+
+.order__btn {
+    text-align: center;
+    padding: 10px 32px;
+    min-width: 200px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accente-color);
+    color: var(--main-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }
 
 .hero-content {
@@ -72,45 +122,6 @@
 .btn-item:not(:last-child) {
     margin-right: 9px;
 }
-
-.order__btn {
-    text-align: center;
-    padding: 10px 32px;
-    min-width: 200px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    background-color: var(--accente-color);
-    color: var(--main-btn-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus,
-    &:hover {
-        background: #188ce8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
-}
-
-.order-title {
-    margin-bottom: 30px;
-}
-
-.order__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
 
 .benefits__list {
     display: flex;
