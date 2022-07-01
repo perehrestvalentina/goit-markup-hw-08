@@ -24,10 +24,15 @@ input {
     cursor: pointer;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
 
-
-section {
-    padding-top: 60px;
+/*section {
+    /*padding-top: 60px;
     padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
@@ -40,4 +45,4 @@ section {
         padding-bottom: 94px;
 
     }
-}
+}*/
