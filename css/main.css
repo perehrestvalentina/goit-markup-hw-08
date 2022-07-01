@@ -31,21 +31,6 @@ img {
   width: 100%;
 }
 
-/*section {
-    /*padding-top: 60px;
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-
-    }
-}*/
 :root {
   --main-btn-color: #ffffff;
   --second-btm-color: #212121;
@@ -752,8 +737,20 @@ html {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .cards__title {
@@ -775,6 +772,17 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .cards__list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__list {
+    flex-wrap: nowrap;
+  }
+}
 
 .cards-list {
   padding: 0;
@@ -782,28 +790,26 @@ html {
 }
 
 .cards__item {
-  width: 100%;
-  height: 92px;
-  width: 35%;
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    width: 13.3333333333%;
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    width: -8.3333333333%;
+    width: calc((100% - 150px) / 6);
   }
 }
 
-.cards-item {
-  margin-right: 30px;
-}
-.cards-item:last-child {
-  margin-right: 0;
-}
+/*.cards-item {
 
+    &:last-child {
+        margin-right: 0;
+    }
+
+}*/
 .cards__link {
   width: 100%;
   height: 100%;
