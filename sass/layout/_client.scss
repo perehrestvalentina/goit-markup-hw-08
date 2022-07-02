@@ -1,9 +1,13 @@
 .client {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include mobile;
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -29,12 +33,11 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 768px) {
-        flex-wrap: wrap;
+    @include tablet {
         margin: -15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         flex-wrap: nowrap;
     }
 }
@@ -47,22 +50,14 @@
 .cards__item {
     width: calc((100% - 30px) / 2);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: calc((100% - 60px) / 3);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 150px) / 6);
     }
 }
-
-/*.cards-item {
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-}*/
 
 .cards__link {
     width: 100%;
