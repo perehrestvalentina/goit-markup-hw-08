@@ -1,11 +1,10 @@
 .team {
-    @include mobile;
 
-    @include tablet {
+    @media screen and (min-width: 480px),
+    (min-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
 
     @include desktop {
         padding-top: 94px;

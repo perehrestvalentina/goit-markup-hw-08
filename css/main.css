@@ -442,7 +442,6 @@ html {
 
 .hero {
   max-width: 1600px;
-  margin: 0 auto;
   padding: 118px 60px 118px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -559,7 +558,7 @@ html {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px), (min-width: 768px) {
   .benefits {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -641,7 +640,7 @@ html {
 .team {
   background: #f5f4fa;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px), (min-width: 768px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
