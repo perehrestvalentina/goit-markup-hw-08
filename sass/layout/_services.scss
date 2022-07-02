@@ -1,15 +1,11 @@
-.section-work {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.services {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     @media screen and (max-width:1199px) {
         display: none;
 
     }
-}
-
-.services__list--end {
-    margin-left: -30px;
 }
 
 .services__list {
@@ -19,14 +15,10 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: -30px;
 }
 
 .services__item {
-    width: 100%;
-    flex-basis: calc((100% / 3) - 30px);
-    margin-bottom: 30px;
-
+    width: calc((100% - 60px) / 3);
 }
 
 .services__box {
