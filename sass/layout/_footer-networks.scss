@@ -1,6 +1,13 @@
 .footer-wrapper {
-    margin-left: 70px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
+
 
 .footer-networks__title-wrapper {
     font-family: 'Roboto', sans-serif;
@@ -8,10 +15,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .footer-networks__list {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
+
 }
 
 .footer-networks-list {
@@ -23,12 +36,9 @@
     height: 44px;
 }
 
-.footer-networks-item {
-    margin-right: 10px;
-}
 
 .footer-networks-item:last-child {
-    margin-right: 0;
+    margin-right: 10px;
 }
 
 .footer-networks__link {
