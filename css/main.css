@@ -441,28 +441,57 @@ html {
 }
 
 .hero {
-  width: 100%;
-  margin: 0;
-  padding: 118px 60px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  flex-grow: 1;
 }
-@media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    padding: 118px 204px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 1dppx) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tab2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    max-width: 1600px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 1), screen and (min-width: 769px) and (min-resolution: 96dpi), screen and (min-width: 769px) and (min-resolution: 1dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1200px) {
+  .hero {
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   }
 }
 
@@ -857,33 +886,56 @@ html {
   fill: var(--accente-color);
 }
 
-.section {
+.projects {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
+@media desktop {
+  .projects {
+    padding-top: 94px;
     padding-top: 94px;
   }
 }
 
-.section__list {
+.projects-section {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  flex-shrink: 0;
-  gap: 8px;
+  margin-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
-  .section__list {
+@media screen and (max-width: 767px) {
+  .projects-section {
+    margin-top: -15px;
+    margin-right: -8px;
+  }
+}
+@media tablet {
+  .projects-section {
+    margin-bottom: 30px;
     justify-content: center;
-    flex-wrap: nowrap;
-    margin: -4px;
+  }
+}
+@media desktop {
+  .projects-section {
+    margin-bottom: 50px;
+  }
+}
+
+/*.section__list {
+    flex-shrink: 0;
+    gap: 10px;
+
+    @include tablet {
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: -4px;
+    }
+}*/
+.section__btn__item:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .section__btn__item {
+    margin-top: 15px;
   }
 }
 
@@ -916,22 +968,6 @@ html {
   background-color: var(--accente-color);
   color: var(--main-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.projects {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .projects {
-    padding-top: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projects {
-    padding-top: 50px;
-    padding-bottom: 94px;
-  }
 }
 
 .projects__list {
@@ -1030,6 +1066,7 @@ html {
 .footer .container {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
 }
 
 .footer__logo {
