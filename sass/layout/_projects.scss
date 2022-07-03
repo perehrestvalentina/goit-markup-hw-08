@@ -1,14 +1,16 @@
-.projects {
-    padding-top: 40px;
-    padding-bottom: 60px;
+.projects-section {
+    display: flex;
+    justify-content: start;
+    -webkit-box-pack: start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
     @include tablet {
-        padding-top: 30px;
+        margin-bottom: 30px;
     }
 
     @include desktop {
-        padding-top: 50px;
-        padding-bottom: 94px;
+        margin-bottom: 50px;
     }
 }
 
