@@ -1008,7 +1008,7 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media desktop {
+@media screen and (min-width: 1200px) {
   .projects {
     padding-top: 94px;
     padding-top: 94px;
@@ -1076,12 +1076,13 @@ html {
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 60px;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .projects__list {
+    display: flex;
+    flex-wrap: wrap;
     margin: -15px;
   }
 }

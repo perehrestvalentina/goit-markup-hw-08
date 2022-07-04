@@ -1,9 +1,10 @@
 .projects__list {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 60px;
     gap: 30px;
 
     @include tablet {
+        display: flex;
+        flex-wrap: wrap;
         margin: -15px;
     }
 
