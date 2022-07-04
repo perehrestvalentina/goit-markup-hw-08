@@ -677,11 +677,6 @@ html {
   border-radius: 4px;
 }
 
-/*.section-list {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-}*/
 .btn-title {
   display: inline;
   border-radius: 4px;
@@ -728,11 +723,9 @@ html {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px), (min-width: 768px) {
-  .benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .benefits {
@@ -808,13 +801,9 @@ html {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
-}
-@media screen and (min-width: 480px), (min-width: 768px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -933,11 +922,9 @@ html {
   fill: var(--main-btn-color);
 }
 
-@media screen and (min-width: 480px), (min-width: 768px) {
-  .client {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .client {

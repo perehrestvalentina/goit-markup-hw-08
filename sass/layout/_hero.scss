@@ -124,13 +124,6 @@
 
 
 
-/*.section-list {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-}*/
-
-
 .btn-title {
     display: inline;
     border-radius: 4px;
@@ -185,11 +178,9 @@
 
 .benefits {
 
-    @media screen and (min-width: 480px),
-    (min-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 
     @include desktop {
         padding-top: 94px;
