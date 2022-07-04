@@ -1051,16 +1051,6 @@ html {
   }
 }
 
-/*.section__list {
-    flex-shrink: 0;
-    gap: 10px;
-
-    @include tablet {
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin: -4px;
-    }
-}*/
 .section__btn__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -1080,11 +1070,8 @@ html {
 }
 
 .section__btn-title {
-  display: inline;
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 73px;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
