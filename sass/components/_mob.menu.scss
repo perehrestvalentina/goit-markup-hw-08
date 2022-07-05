@@ -1,13 +1,8 @@
-/*.mob-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ffff;
-    width: 100vw;
-    height: 100vh;
+.header .sections__header-nav {
+    position: relative;
+}
 
-}*/
-.menu-button {
+.menu-toggle {
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -15,6 +10,34 @@
     background-color: transparent;
 }
 
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
     display: none;
+}
+
+.menu-toggle.is-open .icon-cross {
+    display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+    display: none;
+}
+
+.mob-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffff;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.mob-menu-container {
+    background-color: #ffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
