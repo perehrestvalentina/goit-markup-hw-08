@@ -8,7 +8,7 @@
 .service__label {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -61,11 +61,6 @@
 .service-title {
     margin-bottom: 20px;
 }
-
-/*.input-field {
-    position: relative;
-    width: 358px;
-}*/
 
 
 .service-btn {
