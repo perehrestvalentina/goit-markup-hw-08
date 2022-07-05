@@ -1,7 +1,7 @@
 .header {
     border-bottom: 1px solid #ececec;
 
-    .container {
+    >.container {
         display: flex;
         position: relative;
     }
@@ -200,4 +200,123 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.icon-menu {
+    display: block;
+    margin-left: auto;
+    display: inline-flex;
+
+    border: none;
+    background-color: transparent;
+}
+
+.icon-cross {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 8px;
+
+    border: none;
+    background-color: transparent;
+}
+
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+}
+
+.mob-sections-item:not(:last-child) {
+    padding-bottom: 34px;
+}
+
+.mob-sections-link {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+
+.mob-contact-link {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.mob-contact-tell {
+    font-size: 34px;
+    line-height: calc(40 / 34);
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mob-contact-item:not(:last-child) {
+    padding-bottom: 32px;
+}
+
+.mob-soc-list {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.mob-soc-link {
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mob-soc-item:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+.mob-soc-list {
+    padding-right: 10px;
+    position: relative;
+}
+
+.mob-soc-list::after {
+    content: " ";
+    position: absolute;
+    margin-left: 0;
+    top: 10px;
+    width: 22px;
+    height: 1px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    background-color: #757575;
+
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
