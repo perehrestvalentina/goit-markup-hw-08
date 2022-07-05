@@ -197,17 +197,19 @@
         margin-right: 5px;
     }
 
-    .modal-check:checked+& {
-        background-color: #2196f3;
-        background-image: url(../images/check.svg);
-        border: none;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    .modal-check:focus+& {
-        border-color: #212121;
-    }
+}
+
+.modal-check:checked+.check-text::before {
+    background-color: #2196f3;
+    background-image: url(../images/check.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-check:focus+.check-text::before {
+    border-color: #212121;
 }
 
 .btn-submit {

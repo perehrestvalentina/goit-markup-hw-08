@@ -320,14 +320,16 @@ html {
   border-radius: 3px;
   margin-right: 5px;
 }
-.modal-check:checked + .check-text {
+
+.modal-check:checked + .check-text::before {
   background-color: #2196f3;
   background-image: url(../images/check.svg);
   border: none;
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal-check:focus + .check-text {
+
+.modal-check:focus + .check-text::before {
   border-color: #212121;
 }
 
