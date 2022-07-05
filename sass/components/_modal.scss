@@ -96,7 +96,6 @@
 
 .modal-icon {
     position: absolute;
-    display: inline-;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
@@ -153,7 +152,6 @@
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
-    position: absolute;
     top: 10px;
     right: 10px;
     background: #FFFFFF;
@@ -174,6 +172,8 @@
 }
 
 .check-text {
+    display: flex;
+    justify-content: center;
     font-size: 12px;
     line-height: 1.66;
     letter-spacing: 0.03em;
@@ -182,12 +182,10 @@
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width:1200px) {
-        display: flex;
         font-size: 14px;
         line-height: 1.71;
 
         font-size: 14px;
-        justify-content: center;
     }
 
     &::before {
