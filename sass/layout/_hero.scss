@@ -55,9 +55,6 @@
     }
 }
 
-
-
-
 .hero .container {
     display: block;
     width: 100%;
@@ -121,8 +118,6 @@
         border-radius: 4px;
     }
 }
-
-
 
 .btn-title {
     display: inline;
@@ -192,7 +187,6 @@
     flex-wrap: wrap;
     gap: 30px;
 
-    @include tablet {}
 
     @include desktop {
         flex-wrap: nowrap;

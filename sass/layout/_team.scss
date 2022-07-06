@@ -28,8 +28,6 @@
     gap: 30px;
     text-align: center;
 
-    @include tablet {}
-
     @include desktop {
         flex-wrap: nowrap;
     }

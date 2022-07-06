@@ -29,10 +29,6 @@
     align-items: center;
     justify-content: center;
 
-    @include tablet {
-        margin: -15px;
-    }
-
     @include desktop {
         flex-wrap: nowrap;
     }
@@ -44,7 +40,6 @@
 }
 
 .cards__item {
-    gap: 30px;
     height: 92px;
     width: calc((100% - 30px) / 2);
 
