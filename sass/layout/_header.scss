@@ -103,6 +103,24 @@
     }
 }
 
+.contact {
+    @media screen and (min-width:768px) {
+        .contact__item:not(:last-child) {
+            margin-bottom: 10px;
+
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .contact__item:not(:last-child) {
+            margin-right: 30px;
+
+        }
+    }
+
+
+}
+
 .contact__link {
     font-weight: 500;
     font-size: 12px;
@@ -122,20 +140,6 @@
             justify-content: center;
             font-size: 14px;
             line-height: 1.14;
-        }
-    }
-
-    .contact__item {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-            &:not(:last-child) {
-                margin-right: 50px;
-            }
         }
     }
 
