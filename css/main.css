@@ -788,7 +788,7 @@ html {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tab2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
@@ -799,12 +799,12 @@ html {
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 1), screen and (min-width: 769px) and (min-resolution: 96dpi), screen and (min-width: 769px) and (min-resolution: 1dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-2x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-width: 1200px) {
@@ -923,7 +923,6 @@ html {
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -931,11 +930,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .benefits__list {
-    margin: -15px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .benefits__list {
@@ -1021,11 +1015,6 @@ html {
   flex-wrap: wrap;
   gap: 30px;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .team__list {
-    margin: -15px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
@@ -1162,6 +1151,7 @@ html {
 }
 
 .cards__item {
+  height: 92px;
   width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {

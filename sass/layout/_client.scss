@@ -44,6 +44,8 @@
 }
 
 .cards__item {
+    gap: 30px;
+    height: 92px;
     width: calc((100% - 30px) / 2);
 
     @include tablet {
